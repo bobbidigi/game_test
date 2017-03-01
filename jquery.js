@@ -20,7 +20,9 @@ $("#startreset").click(function(){
 
         //we are not playing
         playing = true; //game initiated
-
+        
+        document.getElementById("background").play();
+        
         //set score to 0
         score = 0; //set score to 0
         $("#scorevalue").html(score);
