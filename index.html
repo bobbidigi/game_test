@@ -1,8 +1,7 @@
-<!--index.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title>Kick Fruit 4 MSA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"> 
 <meta charset="utf-8">
 <meta property="og:url" content="http://www.allentowngroup.com/game_test/" />
 <meta property="og:type"               content="Game" />
@@ -10,16 +9,16 @@
 <meta property="og:description"        content="KICK MSA is a video game sponsored by MSA United" />
 <meta property="og:image"              content="https://cdn.pixabay.com/photo/2016/08/20/01/08/gaming-1606694_960_720.png" />
 <!--[URL=http://s32.photobucket.com/user/Robert_J_Allen/media/PicsArt_02-21-01.09.18_zpsbvvloy0y.png.html][IMG]http://i32.photobucket.com/albums/d16/Robert_J_Allen/PicsArt_02-21-01.09.18_zpsbvvloy0y.png[/IMG][/URL]-->
-
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<title>Kick Fruit 4 MSA</title>
 <link rel="stylesheet" href="styling.css">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<link href="bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
-    
+   
     <body>
-        <div id="container">
+        <div id="container" class="col-md-6 col-lg-10">
            
             <div id="score">
                 Score: <span id="scorevalue">0</span>
@@ -33,25 +32,24 @@
             <div id="wrong">
                 Try again
             </div>
-            <div id="fruitsContainer">
+            <div id="fruitsContainer" class="well">
+               
                 <img id="fruit1" class="fruit" alt="fruits">
             </div>
-            <div id="instruction">
-							<h3>Instructions:  <a href="https://msashoe.org/">  Kick Fruit</a></h3>
+            <div id="instruction" class="col-md-6 text-center">
+							<h3 class="text-center">Instructions:  <a href="https://msashoe.org/">  Kick Fruit</a></h3>
             </div>
-            <div id="startreset">
+            <div id="startreset" class="text-center">
                 Start
             </div>
-            <div id="gameOver">
+            <div id="gameOver" class="text-center col-sm-6">
                 <div id="cherries2">
 									<a href="https://defeatmsa.org/"><img src="images/cherries2.png" alt="blood_pressure"></a>
                 </div>
             </div>
         </div>
         
-        <div style="float:right;">
-        	<img src="images/kickerrrr.png" alt="kicker">
-        </div>
+        
 <!--  Just deleted two </source> tags  -->
         <audio id="slicesound">
             <source src="audio/slicefruit.mp3">
